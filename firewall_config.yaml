@@ -1,0 +1,25 @@
+db_path: firewall.db
+rules:
+  - action: block
+    protocol: 6  # TCP
+    dst_port: 100  # Block TCP port 10000
+  - action: block
+    protocol: 6  # TCP
+    dst_port: 10000  # Block TCP port 10000
+  - action: allow
+    protocol: 1 # 0 means all protocols
+    src_ip: 192.168.137.131  # Block this specific IP
+  - action: allow
+    protocol: 1 # 0 means all protocols
+    src_ip: 192.168.137.130  # Block this specific IP
+  - action: allow
+    protocol: 1
+  - action: allow
+    protocol: 6
+  - action: allow
+    protocol: 17
+    
+blocked_countries:
+  - US
+  - CN
+  - RU

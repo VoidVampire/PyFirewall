@@ -28,7 +28,7 @@ This firewall has been specifically developed and tested on **Kali Linux** (runn
 1. **Clone the repository**
    ```bash
    git clone https://github.com/VoidVampire/PyFirewall.git
-   cd pyfirewall
+   cd PyFirewall
    ```
 
 2. **Install dependencies**
